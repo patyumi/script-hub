@@ -1,0 +1,7 @@
+# Binary files
+*.exe
+*.dll
+*.o
+
+# Temporary files
+*.tmp
