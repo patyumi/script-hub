@@ -1,6 +1,6 @@
 module github.com/patyumi/script-hub
 
-go 1.24.5
+go 1.25
 
 require github.com/manifoldco/promptui v0.9.0
 

@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/manifoldco/promptui"
+	"github.com/patyumi/script-hub/internal"
 )
 
 func main() {
@@ -11,15 +12,18 @@ func main() {
 
 	prompt := promptui.Select{
 		Label: "Select Day",
-		Items: []string{"Entrar", "Sair"},
+		Items: []string{"Gerador de dados", "Sair"},
 	}
 
 	_, result, err := prompt.Run()
 
 	switch result {
 
+	case "Gerador de dados":
+		internal.GeradorDados()
+
 	case "Sair":
-		fmt.Printf("You choose %q\n", result)
+		fmt.Printf("Até mais!\n")
 
 	}
 
